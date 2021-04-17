@@ -83,20 +83,20 @@ class App extends Component {
     return (
         <Router>
         <div>
-        <Route exact path="/" render={HomeComponent}/>
-        <Route exact path="/userProfile" render={UserProfileComponent}/>
-        <Route exact path="/login" render={LogInComponent}/>
-        <Route exact path="/debit" render={DebitComponent}/>
-        <Route exact path="/credit" render={CreditComponent}/>
-        <Link to="/">Return to Home</Link>
+        <Route exact path="/wd-7" render={HomeComponent}/>
+        <Route exact path="/wd-7/userProfile" render={UserProfileComponent}/>
+        <Route exact path="/wd-7/login" render={LogInComponent}/>
+        <Route exact path="/wd-7/debit" render={DebitComponent}/>
+        <Route exact path="/wd-7/credit" render={CreditComponent}/>
+        <Link to="/wd-7">Return to Home</Link>
       <br/>
-      <Link to="/login">Log in</Link>
+      <Link to="/wd-7/login">Log in</Link>
       <br/>
-      <Link to="/userProfile">User Profile</Link>
+      <Link to="/wd-7/userProfile">User Profile</Link>
       <br/>
-      <Link to="/debit">Debits</Link>
+      <Link to="/wd-7/debit">Debits</Link>
       <br/>
-      <Link to="/credit">Credits</Link>
+      <Link to="/wd-7/credit">Credits</Link>
       <AccountBalance accountBalance={this.state.accountBalance}/>
 
       </div>
