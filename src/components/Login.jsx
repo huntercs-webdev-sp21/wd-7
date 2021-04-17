@@ -48,8 +48,8 @@ class LogIn extends Component {
           <button>Log In</button>
         </form>
       </div>
-    )
+    );
   }
 }
 
-export default LogIn
+export default LogIn;
