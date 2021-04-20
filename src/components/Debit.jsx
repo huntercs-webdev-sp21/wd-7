@@ -35,6 +35,8 @@ class Debit extends Component {
 
 
   handleSumbit = () => {
+    const {amount, description, date} = this.state;
+    if (!(amount && description && date)) return;
     let newDebits = [...this.props.debits, {...this.state}];
     this.props.handleDebitChange(newDebits);
     this.props.handleBalanceChange(parseInt(this.state.amount));
