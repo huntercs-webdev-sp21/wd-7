@@ -39,7 +39,7 @@ class Debit extends Component {
     if (!(amount && description && date)) return;
     let newDebits = [...this.props.debits, {...this.state}];
     this.props.handleDebitChange(newDebits);
-    this.props.handleBalanceChange(parseInt(this.state.amount));
+    this.props.handleBalanceChange(-parseInt(this.state.amount));
   }
 
   render() {

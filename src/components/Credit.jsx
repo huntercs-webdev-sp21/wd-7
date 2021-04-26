@@ -39,7 +39,7 @@ class Credit extends Component {
     if (!(amount && description && date)) return;
     let newCredits = [...this.props.credits, {...this.state}];
     this.props.handleCreditChange(newCredits);
-    this.props.handleBalanceChange(-parseInt(this.state.amount));
+    this.props.handleBalanceChange(parseInt(this.state.amount));
   }
 
   render() {
